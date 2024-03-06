@@ -17,6 +17,7 @@ body
 	width: 100vw;
 	height: 5vh;
 	background-image: url(silver.jpg);
+	background-repeat: no-repeat;
 }
 .section1-body
 {

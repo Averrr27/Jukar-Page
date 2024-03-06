@@ -1,11 +1,26 @@
 body
 {
-	background-color: navy;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(28, 28, 31);
 }
-.nav
+.header
 {
-	position: absolute;
+	width: 100vw;
+	height: 3vh;
+	background-color: black;
+}
+.navigation
+{
+	position: sticky;
+	top: 0;
 	width: 100vw;
 	height: 5vh;
-	background-color: red;
+	background-image: url(silver.jpg);
+}
+.section1-body
+{
+	width: 100vw;
+	height: 300vw;
+	background-color: rgb(37, 37, 37);
 }

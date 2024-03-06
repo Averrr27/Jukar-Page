@@ -1,11 +1,11 @@
 body
 {
-	background: #212e50 url(tlo2.jpg) 50% 50% repeat-y;
-	background-size: 100%;
-	margin: 0;
-	padding: 0;
+	background-color: navy;
 }
-h1
+.nav
 {
-	color: white;
+	position: absolute;
+	width: 100vw;
+	height: 5vh;
+	background-color: red;
 }

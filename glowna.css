@@ -9,12 +9,24 @@ body
 }
 .header-contact-bar
 {
-	position: relative;
+	display: flex;
+	align-items: center;
+	position: absolute;
 	height: 8vh;
-	width: 100vw;
+	width: 100%;
 	font-size: 2vw;
 	font-weight: bold;
-	background-color: rgb(172, 172, 172);
+}
+.header-logos img
+{
+	margin-left: 2vw;
+	height: 50px;
+	width: 50px;
+	-webkit-filter: contrast(0) brightness(1.5);
+}
+.header-phone
+{
+	color: #BFBFBF;
 }
 .header
 {
@@ -23,19 +35,19 @@ body
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 86vh;
-	color: white;
+	height: 94vh;
+	color: #BFBFBF;
 	line-height: 2vh;
 }
 .header-title
 {
 	text-align: center;
 	z-index: -1;
-	color: white;
+	color: #BFBFBF;
 	font-size: 6vw;
 	animation: 2.5s header-title-animations forwards;
 }
-.header-title > p
+.header-title p
 {
 	font-size: 4vw;
 	animation: 4s header-title-animations forwards;
@@ -53,11 +65,15 @@ body
 }
 .navigation
 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	position: sticky;
 	top: 0;
 	width: 100%;
 	height: 6vh;
-	background-color: rgb(196, 196, 196);
+	background-color: #BFBFBF;
+	font-size: 2vw;
 }
 .section1-body
 {

@@ -17,7 +17,6 @@ body
 	width: 100%;
 	font-size: clamp(0.7rem, 3vw, 5rem);
 	color: #BFBFBF;
-	animation: 2.5s header-title-animations forwards;
 }
 .header-logos, .header-mail, .header-phone
 {
@@ -26,6 +25,7 @@ body
 	margin-right: 5vw;
 	margin-left: 5vw;
 	height: 8vh;
+	animation: 2.5s header-title-animations forwards;
 }
 .heder-mail-adress, .header-phone-number
 {

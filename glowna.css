@@ -81,7 +81,6 @@ body
 {
 	display: flex;
 	align-items: center;
-	justify-content: right;
 	position: sticky;
 	top: 0;
 	width: 100%;
@@ -89,13 +88,33 @@ body
 	background-color: #BFBFBF;
 	font-size: 2vw;
 }
-td
+.navigation-logo
 {
-	padding-left: 6vw;
+	display: flex;
+	justify-content: center;
+	width: 30%;
 }
-table
+.navigation-logo > img
 {
-	margin-right: 10vw;
+	width: clamp(15px, 7vw, 10vw);
+	height: clamp(15px, 5vw, 8vw);
+}
+.navigation-menu
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+}
+.navigation-menu a
+{
+	margin-right: 5vw;
+	margin-left: 5vw;
+	text-decoration: none;
+	color: black;
+}
+.navigation-menu-main:hover, .navigation-menu-kontakt, .navigation-menu-aktualnosci
+{
 }
 .section1-body
 {
@@ -114,5 +133,18 @@ table
 	{
 		opacity: 100%;
 		transform: translateY(0%);
+	}
+}
+@keyframes navigation-href-animations
+{
+	0%
+	{
+		background-color: #BFBFBF;
+		color: black;
+	}
+	100%
+	{
+		background-color: black;
+		color: white;
 	}
 }

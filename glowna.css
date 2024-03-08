@@ -81,13 +81,21 @@ body
 {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: right;
 	position: sticky;
 	top: 0;
 	width: 100%;
 	height: 6vh;
 	background-color: #BFBFBF;
 	font-size: 2vw;
+}
+td
+{
+	padding-left: 6vw;
+}
+table
+{
+	margin-right: 10vw;
 }
 .section1-body
 {

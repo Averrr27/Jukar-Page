@@ -16,25 +16,31 @@ body
 	height: 8vh;
 	width: 100%;
 	font-size: clamp(0.7rem, 3vw, 5rem);
-	color: #BFBFBF; 
+	color: #BFBFBF;
+	animation: 2.5s header-title-animations forwards;
 }
 .header-logos, .header-mail, .header-phone
 {
-	margin-top: 2vh;
+	display: inline-block;
+	margin-top: 2vw;
 	margin-right: 5vw;
 	margin-left: 5vw;
-	display: inline-block;
 	height: 8vh;
 }
 .heder-mail-adress, .header-phone-number
 {
 	display: inline-block;
+	transform: translateY(-10%);
 }
 .header-logos > img, .header-phone > img, .header-mail > img
 {
 	width: clamp(15px, 3vw, 4vw);
 	height: clamp(15px, 3vw, 4vw);
 	-webkit-filter: contrast(0) brightness(1.5);
+}
+.header-logos img
+{
+	padding-left: 2vw;
 }
 .header
 {
@@ -58,7 +64,7 @@ body
 .header-title p
 {
 	font-size: clamp(1rem, 3vw, 5rem);
-	animation: 4s header-title-animations forwards;
+	animation: 3.2s header-title-animations forwards;
 }
 .header-vid
 {

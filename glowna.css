@@ -10,23 +10,31 @@ body
 .header-contact-bar
 {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	position: absolute;
 	height: 8vh;
 	width: 100%;
-	font-size: 2vw;
-	font-weight: bold;
+	font-size: clamp(0.7rem, 3vw, 5rem);
+	color: #BFBFBF; 
 }
-.header-logos img
+.header-logos, .header-mail, .header-phone
 {
-	margin-left: 2vw;
-	height: 50px;
-	width: 50px;
+	margin-top: 2vh;
+	margin-right: 5vw;
+	margin-left: 5vw;
+	display: inline-block;
+	height: 8vh;
+}
+.heder-mail-adress, .header-phone-number
+{
+	display: inline-block;
+}
+.header-logos > img, .header-phone > img, .header-mail > img
+{
+	width: clamp(15px, 3vw, 4vw);
+	height: clamp(15px, 3vw, 4vw);
 	-webkit-filter: contrast(0) brightness(1.5);
-}
-.header-phone
-{
-	color: #BFBFBF;
 }
 .header
 {
@@ -44,12 +52,12 @@ body
 	text-align: center;
 	z-index: -1;
 	color: #BFBFBF;
-	font-size: 6vw;
+	font-size: clamp(2rem, 4.5vw, 7rem);
 	animation: 2.5s header-title-animations forwards;
 }
 .header-title p
 {
-	font-size: 4vw;
+	font-size: clamp(1rem, 3vw, 5rem);
 	animation: 4s header-title-animations forwards;
 }
 .header-vid

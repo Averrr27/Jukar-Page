@@ -15,7 +15,7 @@ body
 	position: absolute;
 	height: 8vh;
 	width: 100%;
-	font-size: clamp(0.7rem, 3vw, 5rem);
+	font-size: clamp(0.4rem, 2vw, 5rem);
 	color: #BFBFBF;
 }
 .header-logos, .header-mail, .header-phone
@@ -34,8 +34,8 @@ body
 }
 .header-logos > img, .header-phone > img, .header-mail > img
 {
-	width: clamp(15px, 3vw, 4vw);
-	height: clamp(15px, 3vw, 4vw);
+	width: clamp(15px, 2vw, 4vw);
+	height: clamp(15px, 2vw, 4vw);
 	-webkit-filter: contrast(0) brightness(1.5);
 }
 .header-logos img
@@ -52,6 +52,11 @@ body
 	height: 94vh;
 	color: #BFBFBF;
 	line-height: 2vh;
+	background-image: url("header-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	z-index: -2;
 }
 .header-title
 {
@@ -66,17 +71,6 @@ body
 	font-size: clamp(1rem, 3vw, 5rem);
 	animation: 3.2s header-title-animations forwards;
 }
-.header-vid
-{
-	-webkit-filter: grayscale(80%) blur(3px) brightness(30%);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: fill;
-	z-index: -100;
-}
 .navigation
 {
 	display: flex;
@@ -86,7 +80,7 @@ body
 	width: 100%;
 	height: 6vh;
 	background-color: #BFBFBF;
-	font-size: 2vw;
+	font-size: 3rem;
 }
 .navigation-logo
 {
@@ -108,13 +102,51 @@ body
 }
 .navigation-menu a
 {
-	margin-right: 5vw;
-	margin-left: 5vw;
+	position: relative;
+	margin-right: 4vw;
+	margin-left: 4vw;
 	text-decoration: none;
 	color: black;
 }
-.navigation-menu-main:hover, .navigation-menu-kontakt, .navigation-menu-aktualnosci
+.navigation-menu-main:before, .navigation-menu-kontakt:before, .navigation-menu-aktualnosci:before, .navigation-menu-regulamin:before
 {
+	position: absolute;
+	transform: translateX(6vw);
+	content: '';
+	opacity: 0;
+	background-color: black;
+	height: 70%;
+	width: 4px;
+	animation: 0.5s brackets-movement-left-out;
+}
+.navigation-menu-main:after, .navigation-menu-kontakt:after, .navigation-menu-aktualnosci:after, .navigation-menu-regulamin:after
+{
+	position: absolute;
+	content: '';
+	opacity: 0;
+	transform: translateX(-6vw);
+	background-color: black;
+	height: 70%;
+	width: 4px;
+	animation: 0.5s brackets-movement-right-out;
+}
+.navigation-menu-main:hover::before, .navigation-menu-kontakt:hover::before, .navigation-menu-aktualnosci:hover::before, .navigation-menu-regulamin:hover::before
+{
+	position: absolute;
+	content: '';
+	background-color: black;
+	height: 70%;
+	width: 4px;
+	animation: 0.5s brackets-movement-left-in forwards;
+}
+.navigation-menu-main:hover::after, .navigation-menu-kontakt:hover::after, .navigation-menu-aktualnosci:hover::after, .navigation-menu-regulamin:hover::after
+{
+	position: absolute;
+	content: '';
+	background-color: black;
+	height: 70%;
+	width: 4px;
+	animation: 0.5s brackets-movement-right-in forwards;
 }
 .section1-body
 {
@@ -135,16 +167,55 @@ body
 		transform: translateY(0%);
 	}
 }
-@keyframes navigation-href-animations
+@keyframes brackets-movement-left-in
 {
 	0%
 	{
-		background-color: #BFBFBF;
-		color: black;
+		transform: translateX(6vw);
+		opacity: 0;
 	}
 	100%
 	{
-		background-color: black;
-		color: white;
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes brackets-movement-left-out
+{
+	0%
+	{
+		transform: translateX(0);
+		opacity: 1;
+	}
+	100%
+	{
+		transform: translateX(6vw);
+		opacity: 0;
+	}
+}
+@keyframes brackets-movement-right-in
+{
+	0%
+	{
+		transform: translateX(-6vw);
+		opacity: 0;
+	}
+	100%
+	{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes brackets-movement-right-out
+{
+	0%
+	{
+		transform: translateX(0);
+		opacity: 1;
+	}
+	100%
+	{
+		transform: translateX(-6vw);
+		opacity: 0;
 	}
 }

@@ -81,7 +81,7 @@ body
 {
 	margin-top: 2vh;
 	margin-bottom: 2vh;
-	font-size: 2.2vw;
+	font-size: 2vw;
 	line-height: 1.2;
 	animation: 3.2s header-title-animations forwards;
 }
@@ -89,7 +89,7 @@ body
 {
 	.header-title-title, .header-info-title
 	{
-		font-size: 2vw;
+		font-size: 3vw;
 	}
 	.header-info, .header-title
 	{

@@ -66,17 +66,18 @@ body
 	font-size: clamp(0.9rem, 2vw, 3rem);
 	line-height: 4vh;
 	z-index: -1;
-	background-color: navy;
+	color: #BFBFBF;
 	animation: 2.5s header-title-animations forwards;
 }
-.header-title p
+.header-title p, .header-info p
 {
 	display: inline-block;
 	margin-top: 0.3vh;
 	margin-bottom: 0.3vh;
 	font-weight: bold;
+	color:#D97B29;
 }
-.header-title-title
+.header-title-title, .header-info-title
 {
 	margin-top: 2vh;
 	margin-bottom: 2vh;
@@ -86,16 +87,15 @@ body
 .header-info
 {
 	position: relative;
-	width: 25vw;
+	width: 35vw;
 	height: 40vh;
 	color: #BFBFBF;
 	font-size: clamp(0.9rem, 2vw, 3rem);
 	line-height: 4vh;
 	z-index: -1;
-	background-color: navy;
 	animation: 2.5s header-title-animations forwards;
 }
-.header-map
+.header-map iframe
 {
 	position: relative;
 	width: 25vw;

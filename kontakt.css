@@ -126,7 +126,7 @@ body
 	width: 100%;
 	height: clamp(3vh, 5vh, 7vh);
 	background-color: #BFBFBF;
-	font-size: clamp(1rem, 1.5vw, 5vw);
+	font-size: clamp(0.7rem, 1.5vw, 5vw);
 }
 .navigation-logo
 {

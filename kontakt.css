@@ -102,7 +102,7 @@ body
 	width: 35vw;
 	height: 40vh;
 	color: #BFBFBF;
-	font-size: 3em;
+	font-size: 2em;
 	line-height: 1.2;
 	z-index: -1;
 	animation: 2.3s ease-out header-title-animations forwards;

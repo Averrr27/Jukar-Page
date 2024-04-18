@@ -169,11 +169,17 @@ body
 	justify-content: center;
 	width: 30%;
 }
-.navigation-logo > img
+.aindex
 {
-	width: clamp(15px, 7vw, 10vw);
-	height: clamp(15px, 5vw, 8vw);
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }
+.aindex img
+{
+	width: 60%;
+}
+
 .navigation-menu
 {
 	display: flex;

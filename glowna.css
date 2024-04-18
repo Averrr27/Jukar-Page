@@ -58,6 +58,11 @@ body
     background-size: cover;
 	z-index: -2;
 }
+.header-title img
+{
+	width: 12vw;
+	height: 25vw;
+}
 .header-title
 {
 	text-align: center;
@@ -68,6 +73,7 @@ body
 }
 .header-title p
 {
+	font-weight: bold;
 	font-size: clamp(1rem, 3vw, 5rem);
 	animation: 3.2s header-title-animations forwards;
 }
@@ -82,16 +88,28 @@ body
 	background-color: #BFBFBF;
 	font-size: clamp(1rem, 2vw, 5vw);
 }
+@media (max-width: 800px)
+{
+.navigation
+	{
+		font-size: 3vw;
+	}
+}
 .navigation-logo
 {
 	display: flex;
 	justify-content: center;
 	width: 30%;
 }
-.navigation-logo > img
+.aindex
 {
-	width: clamp(15px, 7vw, 10vw);
-	height: clamp(15px, 5vw, 8vw);
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.aindex img
+{
+	width: 60%;
 }
 .navigation-menu
 {
@@ -109,18 +127,18 @@ body
 	color: black;
 	height: clamp(3vh, 5vh, 7vh);
 }
-.navigation-menu-main:before, .navigation-menu-kontakt:before, .navigation-menu-aktualnosci:before, .navigation-menu-regulamin:before
+.navigation-menu-main a:before, .navigation-menu-kontakt a:before, .navigation-menu-aktualnosci a:before, .navigation-menu-regulamin a:before
 {
 	position: absolute;
 	transform: translateX(6vw);
 	content: '';
 	opacity: 0;
 	background-color: rgb(28, 28, 31);
-	height: 95%;
+	height: 100%;
 	width: 4px;
 	animation: 0.5s brackets-movement-left-out;
 }
-.navigation-menu-main:after, .navigation-menu-kontakt:after, .navigation-menu-aktualnosci:after, .navigation-menu-regulamin:after
+.navigation-menu-main a:after, .navigation-menu-kontakt a:after, .navigation-menu-aktualnosci a:after, .navigation-menu-regulamin a:after
 {
 	position: absolute;
 	content: '';
@@ -131,22 +149,22 @@ body
 	width: 4px;
 	animation: 0.5s brackets-movement-right-out;
 }
-.navigation-menu-main:hover::before, .navigation-menu-kontakt:hover::before, .navigation-menu-aktualnosci:hover::before, .navigation-menu-regulamin:hover::before
+.navigation-menu-main a:hover::before, .navigation-menu-kontakt a:hover::before, .navigation-menu-aktualnosci a:hover::before, .navigation-menu-regulamin a:hover::before
 {
 	position: absolute;
 	content: '';
 	background-color: rgb(28, 28, 31);
-	height: 95%;
-	width: 4px;
+	height: 100%;
+	width: 2px;
 	animation: 0.5s brackets-movement-left-in forwards;
 }
-.navigation-menu-main:hover::after, .navigation-menu-kontakt:hover::after, .navigation-menu-aktualnosci:hover::after, .navigation-menu-regulamin:hover::after
+.navigation-menu-main a:hover::after, .navigation-menu-kontakt a:hover::after, .navigation-menu-aktualnosci a:hover::after, .navigation-menu-regulamin a:hover::after
 {
 	position: absolute;
 	content: '';
 	background-color: black;
-	height: 95%;
-	width: 4px;
+	height: 100%;
+	width: 2px;
 	animation: 0.5s brackets-movement-right-in forwards;
 }
 .section1-body

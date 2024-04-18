@@ -41,6 +41,12 @@ body
 {
 	padding-left: 2vw;
 }
+.header-map
+{
+	width: 20vw;
+	height: 30vh;
+	overflow: auto;
+}
 .header
 {
 	position: relative;
@@ -115,36 +121,22 @@ body
 	display: flex;
 	justify-content: center;
 }
+.header-map
+{
+	padding-top: 5vh;
+	width: 30vw;
+	height: 80%;
+	overflow: hidden;
+	
+}
 .header-map iframe
 {
-	position: absolute;
-	width: 50vw;
+	width: 30vw;
 	height: 40vh;
 	color: #BFBFBF;
 	animation: 2.5s ease-out header-title-animations forwards;
 }
-.header-map
-{
-	margin-top: 5vh;
-	display: flex;
-	justify-content: center;
-	width: 40vw;
-	height: 40vh;
-	overflow: hidden;
 
-}
-@media (max-width: 1100px) 
-{
-	.header-map
-	{
-		height: 40vh;
-		width: 100%;
-	}
-	.header iframe
-	{
-		width: 100%;
-	}
-  }
 .navigation
 {
 	display: flex;

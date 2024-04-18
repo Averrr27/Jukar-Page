@@ -141,6 +141,13 @@ body
 	background-color: #BFBFBF;
 	font-size: clamp(1rem, 2vw, 5vw);
 }
+@media (max-width: 800px)
+{
+.navigation
+	{
+		font-size: 1vw;
+	}
+}
 .navigation-logo
 {
 	display: flex;

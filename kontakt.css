@@ -162,6 +162,10 @@ body
 	{
 		font-size: 3vw;
 	}
+	.aindex img
+	{
+		width : 80%;
+	}	
 }
 .navigation-logo
 {
@@ -177,7 +181,7 @@ body
 }
 .aindex img
 {
-	width: 60%;
+	width: 80%;
 }
 
 .navigation-menu

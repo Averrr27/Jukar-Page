@@ -85,7 +85,7 @@
 				<div class="swiper-button-next"></div>
 			  </div>
 			</div>
-			<div class="desc"> KILKA SŁÓW
+			<div id="scrollshow-desc" class="firma-desc hide"> KILKA SŁÓW
 				<div class="desc_upsides">O FIRMIE</div>
 			</div>
 		</div>
@@ -108,6 +108,32 @@
 					prevEl: '.swiper-button-prev',
 				},
 			});
+			myID = document.getElementById("scrollshow-desc");
+			function show() {
+				// current scroll position 
+				var st = window.pageYOffset || document.documentElement.scrollTop;
+				// scrolling up 
+				if (st < lastScrollTop) {
+					upCounter += 1;
+					downCounter = 0;
+					if (upCounter == 100) 
+					{
+						myID.className = "firma-desc hide";
+					}
+				} else { // scrolling down
+					downCounter -= 1;
+					upCounter = 0;
+					if (downCounter == -100) 
+					{
+						myID.className = "firma-desc show";
+					}
+				}
+				lastScrollTop = st <= 0 ? 0 : st;
+			}
+			var lastScrollTop = 0;
+			var upCounter = 0
+			var downCounter = 0
+			window.addEventListener("scroll", show)
 		</script>
 	</body>
 </html>

@@ -11,6 +11,10 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 	<body>
 		<div class="header-contact-bar">
@@ -53,9 +57,57 @@
 			</div>
 		</div>
 		<div class="section1-body">
+			<p class="galeria-title">PROCES SERWISU</p>
+			<div class="galeria">
+			<div class="swiper">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide"><img src="gpics/g1.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g2.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g4.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g5.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g7.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g10.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g11.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g12.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g13.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g14.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g15.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g16.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g17.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g18.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g19.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g20.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g21.jpeg"/></div>
+				  <div class="swiper-slide"><img src="gpics/g22.jpeg"/></div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			  </div>
+			</div>
 			<div class="desc"> KILKA SŁÓW
 				<div class="desc_upsides">O FIRMIE</div>
 			</div>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper('.swiper', 
+			{
+				autoplay: 
+				{
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+  				loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
 	</body>
 </html>

@@ -85,15 +85,26 @@ body
 {
 .header-rules-title
 	{
-		font-size: 1.5vw;
+		font-size: 1.5vh;
 	}
 .header-rules-body
 	{
 		line-height: 2.2;
-		font-size: 1vw;
+		font-size: 1vh;
 	}
 }
-
+@media (orientation: landscape)
+{
+.header-rules-title
+	{
+		font-size: 2vw;
+	}
+.header-rules-body
+	{
+		line-height: 1.5;
+		font-size: 0.8vw;
+	}
+}
 .navigation
 {
 	display: flex;
@@ -101,15 +112,15 @@ body
 	position: sticky;
 	top: 0;
 	width: 100%;
-	height: clamp(3vh, 5vh, 7vh);
+	height: 5vh;
 	background-color: #BFBFBF;
-	font-size: clamp(1rem, 2vw, 5vw);
+	font-size: 2vw;
 }
-@media (max-width: 800px)
+@media (max-width: 1000px)
 {
 .navigation
 	{
-		font-size: 3vw;
+		font-weight: bold;
 	}
 }
 .navigation-logo

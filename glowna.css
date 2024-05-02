@@ -86,9 +86,16 @@ body
 	top: 0;
 	z-index: 99;
 	width: 100%;
-	height: clamp(3vh, 5vh, 7vh);
+	height: 5vh;
 	background-color: #BFBFBF;
-	font-size: 2vw
+	font-size: 2vw;
+}
+@media (max-width: 1100px) 
+{
+	.navigation
+	{
+		font-weight: bold;
+	}
 }
 .navigation-logo
 {

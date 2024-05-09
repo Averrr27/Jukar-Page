@@ -183,7 +183,7 @@ body
 	content: '';
 	background-color: rgb(28, 28, 31);
 	height: 100%;
-	width: 2px;
+	width: 4px;
 	animation: 0.5s brackets-movement-left-in forwards;
 }
 .navigation-menu-main a:hover::after, .navigation-menu-kontakt a:hover::after, .navigation-menu-aktualnosci a:hover::after, .navigation-menu-regulamin a:hover::after
@@ -192,7 +192,7 @@ body
 	content: '';
 	background-color: black;
 	height: 100%;
-	width: 2px;
+	width: 4px;
 	animation: 0.5s brackets-movement-right-in forwards;
 }
 

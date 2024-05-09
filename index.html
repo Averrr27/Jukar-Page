@@ -32,11 +32,14 @@
 			</div>
 		</div>
 		<div class="header">
+			<div class="header-bg">
+			</div>
 			<div class="header-title">
 					<img src="logo_białe_bez tła.png">
 				<p>ZNACZNIE WIĘCEJ NIŻ SERWIS</p>
 			</div>
 		</div>
+
 		<div class="navigation">
 			<div class="navigation-logo">
 				<a href="index.html" class="aindex"><img src="logo_black_bez tła_rgb.png"></a>
@@ -133,7 +136,18 @@
 			var lastScrollTop = 0;
 			var upCounter = 0
 			var downCounter = 0
-			window.addEventListener("scroll", show)
+			window.addEventListener("scroll", show);
+
+			const bg = document.querySelector('.header');
+			const windowWidth = window.innerWidth / 1;
+			const windowHeight = window.innerHeight / 1;
+
+			bg.addEventListener('mousemove', (e) => {
+			const mouseX = e.clientX / windowWidth;
+			const mouseY = e.clientY / windowHeight;
+  
+  			bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+			});
 		</script>
 	</body>
 </html>

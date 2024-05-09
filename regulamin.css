@@ -114,14 +114,8 @@ body
 	width: 100%;
 	height: 5vh;
 	background-color: #BFBFBF;
-	font-size: 2vw;
-}
-@media (max-width: 1000px)
-{
-.navigation
-	{
-		font-weight: bold;
-	}
+	font-size: 1.7vw;
+	font-weight: bold;
 }
 .navigation-logo
 {
@@ -183,7 +177,7 @@ body
 	content: '';
 	background-color: rgb(28, 28, 31);
 	height: 100%;
-	width: 2px;
+	width: 4px;
 	animation: 0.5s brackets-movement-left-in forwards;
 }
 .navigation-menu-main a:hover::after, .navigation-menu-kontakt a:hover::after, .navigation-menu-aktualnosci a:hover::after, .navigation-menu-regulamin a:hover::after
@@ -192,7 +186,7 @@ body
 	content: '';
 	background-color: black;
 	height: 100%;
-	width: 2px;
+	width: 4px;
 	animation: 0.5s brackets-movement-right-in forwards;
 }
 

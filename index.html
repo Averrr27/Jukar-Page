@@ -19,8 +19,8 @@
 	<body>
 		<div class="header-contact-bar">
 			<div class="header-logos">
-				<img src="fbicon.png">
-				<img src="instaicon.png">
+				<a href="facebook.com"><img src="fbicon.png"></a>
+				<a href="https://www.instagram.com/krissawo/"><img src="instaicon.png"></a>
 			</div>
 			<div class="header-mail">
 				<img src="mailicon.png">
@@ -117,16 +117,16 @@
 				var st = window.pageYOffset || document.documentElement.scrollTop;
 				// scrolling up 
 				if (st < lastScrollTop) {
-					upCounter += 1;
+					upCounter += 2;
 					downCounter = 0;
-					if (upCounter == 100) 
+					if (upCounter == 30) 
 					{
 						myID.className = "firma-desc hide";
 					}
 				} else { // scrolling down
 					downCounter -= 1;
 					upCounter = 0;
-					if (downCounter == -100) 
+					if (downCounter == -30) 
 					{
 						myID.className = "firma-desc show";
 					}

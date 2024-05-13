@@ -31,15 +31,18 @@ body
 	display: inline-block;
 	transform: translateY(-10%);
 }
-.header-logos > img, .header-phone > img, .header-mail > img
+.header-phone > img, .header-mail > img
 {
-	width: clamp(15px, 2vw, 4vw);
-	height: clamp(15px, 2vw, 4vw);
+	width: 1.7vw;
+	height: 1.6vw;
 	-webkit-filter: contrast(0) brightness(1.5);
 }
-.header-logos img
+.header-logos > a img
 {
+	width: 2vw;
+	height: 2vw;
 	padding-left: 2vw;
+	-webkit-filter: contrast(0) brightness(1.5);
 }
 .header
 {

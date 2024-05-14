@@ -188,10 +188,12 @@ body
 {
 	0%
 	{
+		width: 20vw;
 		border-color: rgb(28, 28, 31);
 	}
 	100%
 	{
+		width: 40vw;
 		border-color: #D97B29;
 	}
 	

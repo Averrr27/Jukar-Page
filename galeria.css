@@ -102,6 +102,16 @@ body
 .gallery img
 {
 	width: 20vw;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(28, 28, 31);
+}.gallery img:hover
+{
+	width: 20vw;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #D97B29;
+	animation: 0.5s border-color forwards ease-out;
 }
 @keyframes header-title-animations
 {
@@ -173,4 +183,16 @@ body
 		opacity: 0;
 		background-color: black;
 	}
+}
+@keyframes border-color 
+{
+	0%
+	{
+		border-color: rgb(28, 28, 31);
+	}
+	100%
+	{
+		border-color: #D97B29;
+	}
+	
 }

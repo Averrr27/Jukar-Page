@@ -60,36 +60,27 @@
 			</div>
 		</div>
 		<div class="section1-body">
-			<p class="galeria-title">PROCES SERWISU</p>
+			<p class="galeria-title">TO TUTAJ NAPRAWIAMY CI ZAWIESZENIE</p>
 			<div class="galeria">
 			<div class="swiper">
 				<div class="swiper-wrapper">
 				  <div class="swiper-slide"><img src="Gpics/g1.jpeg"/></div>
 				  <div class="swiper-slide"><img src="Gpics/g2.jpeg"/></div>
-				  <div class="swiper-slide"><img src="Gpics/g4.jpeg"/></div>
-				  <div class="swiper-slide"><img src="Gpics/g5.jpeg"/></div>
-				  <div class="swiper-slide"><img src="Gpics/g7.jpeg"/></div>
-				  <div class="swiper-slide"><img src="Gpics/g10.jpeg"/></div>
-				  <div class="swiper-slide"><img src="Gpics/g11.jpeg"/></div>
 				  <div class="swiper-slide"><img src="Gpics/g12.jpeg"/></div>
-				  <div class="swiper-slide"><img src="Gpics/g13.jpeg"/></div>
 				  <div class="swiper-slide"><img src="Gpics/g14.jpeg"/></div>
-				  <div class="swiper-slide"><img src="Gpics/g15.jpeg"/></div>
-				  <div class="swiper-slide"><img src="Gpics/g16.jpeg"/></div>
-				  <div class="swiper-slide"><img src="Gpics/g17.jpeg"/></div>
-				  <div class="swiper-slide"><img src="Gpics/g18.jpeg"/></div>
-				  <div class="swiper-slide"><img src="Gpics/g19.jpeg"/></div>
-				  <div class="swiper-slide"><img src="Gpics/g20.jpeg"/></div>
-				  <div class="swiper-slide"><img src="Gpics/g21.jpeg"/></div>
-				  <div class="swiper-slide"><img src="Gpics/g22.jpeg"/></div>
 				</div>
 				<div class="swiper-pagination"></div>
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-button-next"></div>
 			  </div>
 			</div>
-			<div id="scrollshow-desc" class="firma-desc hide"> KILKA SŁÓW
-				<div class="desc_upsides">O FIRMIE</div>
+			<div id="scrollshow-desc" class="firma-desc hide"> 
+				<div class="desc-title">SSS W 3 SŁOWACH</div>
+				<div class="desc-upsides">
+					<div class="desc-exp"><img src="clock-three.png"><h1>Doswiadczenie</h1><h3>Lata serwisowania sprzętu, radzenia sobie z usterkami zawieszenia rowerowego.</h3></div>
+					<div class="desc-kno"><img src="book-alt.png"><h1>Wiedza</h1><h3>Wiele naprawionych systemów, od tych najbardziej prostych, po najbardziej złożone w najnowocześniejszych rowerach.</h3></div>
+					<div class="desc-pas"><img src="heart.png"><h1>Pasja</h1><h3>Hobby, w którym zakochałem się od małego, i które towarzyszy mi do teraz.</h3></div>
+				</div>
 			</div>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -117,14 +108,14 @@
 				var st = window.pageYOffset || document.documentElement.scrollTop;
 				// scrolling up 
 				if (st < lastScrollTop) {
-					upCounter += 2;
+					upCounter += 1;
 					downCounter = 0;
 					if (upCounter == 30) 
 					{
 						myID.className = "firma-desc hide";
 					}
 				} else { // scrolling down
-					downCounter -= 1;
+					downCounter -= 6;
 					upCounter = 0;
 					if (downCounter == -30) 
 					{

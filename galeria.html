@@ -13,7 +13,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <script type="text/javascript" src="dist/js/chocolat.js"></script>
 <link rel="stylesheet" href="dist/css/chocolat.css" type="text/css" media="screen" >
-
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 	<body>
 		<div class="navigation">
@@ -35,25 +38,56 @@
 				</div>
 			</div>
 		</div>
-			<div class="gallery">
-				<div class="hidden"><img src="Gpics/g1.jpeg" onclick="highlight();"/></div>
-				<div id="hidden"><img src="Gpics/g2.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g4.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g5.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g7.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g10.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g11.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g12.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g13.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g14.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g15.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g16.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g17.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g18.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g19.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g20.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g21.jpeg"/></div>
-				<div id="hidden"><img src="Gpics/g22.jpeg"/></div>
+		<div class="section1-body">
+			<p class="galeria-title">PROCES SERWISU</p>
+			<div class="galeria">
+			<div class="swiper">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide"><img src="Gpics/g1.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g2.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g4.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g5.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g7.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g10.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g11.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g12.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g13.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g14.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g15.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g16.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g17.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g18.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g19.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g20.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g21.jpeg"/></div>
+				  <div class="swiper-slide"><img src="Gpics/g22.jpeg"/></div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			  </div>
 			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper('.swiper', 
+			{
+				autoplay: 
+				{
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+  				loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+			myID = document.getElementById("scrollshow-desc");
+		</script>
 	</body>
 </html>

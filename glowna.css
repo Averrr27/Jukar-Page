@@ -304,6 +304,10 @@ a:active, a:link, a:visited, a:hover
 	height: 6vw;
 	-webkit-filter: contrast(0) brightness(1.5);
 }
+.desc-exp img:hover
+{
+	-webkit-filter:var(#FF0000);
+}
 .hide 
 {
 	animation: 1s showdescout ease-out forwards;

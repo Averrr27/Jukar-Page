@@ -280,7 +280,7 @@ a[href^=tel] {
 	margin-top: 10vh;
 	margin-bottom: 7vh;
 	text-align: center;
-	font-size: 5vw;
+	font-size: 4vw;
 }
 .desc-upsides
 {
@@ -304,11 +304,11 @@ h3
 {
 	font-size: 1vw;
 }
-@media (max-width: 1400px)
+@media (max-width: 1200px)
 {
 	h3
 	{
-		font-size: 2.6vw;
+		font-size: 2.5vw;
 	}
 }
 @media (max-width: 1400px)
@@ -323,10 +323,6 @@ h3
 	width: 6vw;
 	height: 6vw;
 	-webkit-filter: contrast(0) brightness(1.5);
-}
-.desc-exp img:hover
-{
-	-webkit-filter:var(#FF0000);
 }
 .hide 
 {

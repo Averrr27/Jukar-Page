@@ -7,6 +7,10 @@ body
  	font-family: "Montserrat", sans-serif;
 	overflow-x: hidden;
 }
+a:active, a:link, a:visited, a:hover
+{
+	text-decoration: none;
+}
 .header-contact-bar
 {
 	display: flex;

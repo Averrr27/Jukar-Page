@@ -268,13 +268,10 @@ a[href^=tel] {
 	.firma-desc
 	{
 		font-weight: bold;
+		height: 80vh;
 	}
 	
 }
-.desc-upsides
-	{
-		font-size: 3vw;
-	}
 .desc-title
 {
 	width: 80%;
@@ -282,6 +279,15 @@ a[href^=tel] {
 	margin-bottom: 7vh;
 	text-align: center;
 	font-size: 4vw;
+}
+@media (max-width: 1400px)
+{
+	.desc-title
+	{
+		margin-top: 0vh;
+
+	}
+	
 }
 .desc-upsides
 {

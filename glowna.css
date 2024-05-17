@@ -306,11 +306,11 @@ a[href^=tel] {
 	width: 30vw;
 	height: 40vh;
 	font-size: 1vw;
-	-webkit-filter: contrast(0) brightness(1.5);
+	animation: desc-colors-out 1s forwards;
 }
 .desc-exp:hover, .desc-kno:hover, .desc-pas:hover
 {
-	animation: desc-colors 1s forwards;
+	animation: desc-colors-in 1s forwards;
 }
 h3
 {
@@ -440,7 +440,7 @@ h3
 		background-color: black;
 	}
 }
-@keyframes desc-colors
+@keyframes desc-colors-in
 {
 	0%
 	{
@@ -449,5 +449,16 @@ h3
 	100%
 	{
 		-webkit-filter:none ;
+	}
+}
+@keyframes desc-colors-out
+{
+	0%
+	{
+		-webkit-filter:none ;
+	}
+	100%
+	{
+		-webkit-filter: contrast(0) brightness(1.5);
 	}
 }

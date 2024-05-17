@@ -256,6 +256,14 @@ a:active, a:link, a:visited, a:hover
 	background-image: url(Gory-tlo.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	color: #BFBFBF;
+}
+@media (max-width: 1400px)
+{
+	.firma-desc
+	{
+		font-weight: bold;
+	}
 }
 .desc-title
 {
@@ -263,7 +271,7 @@ a:active, a:link, a:visited, a:hover
 	margin-top: 5vh;
 	margin-bottom: 7vh;
 	text-align: center;
-	font-size: 4vw;
+	font-size: 5vw;
 }
 .desc-upsides
 {

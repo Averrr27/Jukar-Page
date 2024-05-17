@@ -17,6 +17,10 @@ body
 	font-size: clamp(0.4rem, 2vw, 5rem);
 	color: #BFBFBF;
 }
+a[href^=tel] {
+	text-decoration:inherit;
+	color: inherit;
+ }
 @media (max-width: 1400px)
 {
 	.header-contact-bar

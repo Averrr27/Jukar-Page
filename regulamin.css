@@ -6,6 +6,10 @@ body
   	font-weight: 100;
  	font-family: "Montserrat", sans-serif;
 }
+a[href^=tel] {
+	text-decoration:inherit;
+	color: inherit;
+ }
 .header-contact-bar
 {
 	display: flex;

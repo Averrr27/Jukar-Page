@@ -123,8 +123,15 @@ body
 	width: 100%;
 	height: 5vh;
 	background-color: #BFBFBF;
-	font-size: 1.7vw;
+	font-size: 2vw;
 	font-weight: bold;
+}
+@media (max-width: 1400px)
+{
+	.navigation
+	{
+		font-size: 2.5vw;
+	}
 }
 .navigation-logo
 {
@@ -152,13 +159,13 @@ body
 .navigation-menu a
 {
 	position: relative;
-	margin-right: 4vw;
-	margin-left: 4vw;
+	margin-right: 2.5vw;
+	margin-left: 2.5vw;
 	text-decoration: none;
 	color: black;
 	height: clamp(3vh, 5vh, 7vh);
 }
-.navigation-menu-main a:before, .navigation-menu-kontakt a:before, .navigation-menu-aktualnosci a:before, .navigation-menu-regulamin a:before
+.navigation-menu-main a:before, .navigation-menu-e-bike a:before, .navigation-menu-kontakt a:before, .navigation-menu-bike a:before, .navigation-menu-regulamin a:before
 {
 	position: absolute;
 	transform: translateX(6vw);
@@ -169,7 +176,7 @@ body
 	width: 4px;
 	animation: 0.5s brackets-movement-left-out;
 }
-.navigation-menu-main a:after, .navigation-menu-kontakt a:after, .navigation-menu-aktualnosci a:after, .navigation-menu-regulamin a:after
+.navigation-menu-main a:after, .navigation-menu-e-bike a:after, .navigation-menu-kontakt a:after, .navigation-menu-bike a:after, .navigation-menu-regulamin a:after
 {
 	position: absolute;
 	content: '';
@@ -180,7 +187,7 @@ body
 	width: 4px;
 	animation: 0.5s brackets-movement-right-out;
 }
-.navigation-menu-main a:hover::before, .navigation-menu-kontakt a:hover::before, .navigation-menu-aktualnosci a:hover::before, .navigation-menu-regulamin a:hover::before
+.navigation-menu-main a:hover::before, .navigation-menu-e-bike a:hover::before, .navigation-menu-kontakt a:hover::before, .navigation-menu-bike a:hover::before, .navigation-menu-regulamin a:hover::before
 {
 	position: absolute;
 	content: '';
@@ -189,7 +196,7 @@ body
 	width: 4px;
 	animation: 0.5s brackets-movement-left-in forwards;
 }
-.navigation-menu-main a:hover::after, .navigation-menu-kontakt a:hover::after, .navigation-menu-aktualnosci a:hover::after, .navigation-menu-regulamin a:hover::after
+.navigation-menu-main a:hover::after, .navigation-menu-e-bike a:hover::after, .navigation-menu-kontakt a:hover::after, .navigation-menu-bike a:hover::after, .navigation-menu-regulamin a:hover::after
 {
 	position: absolute;
 	content: '';

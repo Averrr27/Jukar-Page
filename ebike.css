@@ -71,7 +71,7 @@ body
 }
 @media (max-width: 1400px)
 {
-.header-title, .header-info
+.header-title
 {
 	font-size: 3vw;
 }
@@ -104,30 +104,13 @@ body
 	color: #BFBFBF;
 	animation: 2.1s ease-out header-title-animations forwards;
 }
-.header-title p, .header-info p
+.header-title p
 {
 	display: inline-block;
 	margin-top: 0.3vh;
 	margin-bottom: 0.3vh;
 	font-weight: bold;
 	color:#D97B29;
-}
-.header-title-title, .header-info-title
-{
-	margin-top: 2vh;
-	margin-bottom: 2vh;
-	line-height: 1.2;
-	animation: 3.2s header-title-animations forwards;
-}
-.header-info
-{
-	position: relative;
-	width: 35vw;
-	height: 40vh;
-	color: #BFBFBF;
-	line-height: 1.2;
-	z-index: -1;
-	animation: 2.3s ease-out header-title-animations forwards;
 }
 .section1
 {

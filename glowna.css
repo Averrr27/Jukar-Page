@@ -176,7 +176,7 @@ a[href^=tel] {
 .navigation-menu-main a:before, .navigation-menu-e-bike a:before, .navigation-menu-kontakt a:before, .navigation-menu-bike a:before, .navigation-menu-regulamin a:before
 {
 	position: absolute;
-	transform: translateX(6vw);
+	transform: translateX(4vw);
 	content: '';
 	opacity: 0;
 	background-color: rgb(28, 28, 31);
@@ -189,7 +189,7 @@ a[href^=tel] {
 	position: absolute;
 	content: '';
 	opacity: 0;
-	transform: translateX(-6vw);
+	transform: translateX(-4vw);
 	background-color: rgb(28, 28, 31);
 	height: 100%;
 	width: 4px;
@@ -198,7 +198,7 @@ a[href^=tel] {
 .navigation-menu-main a:hover::before, .navigation-menu-e-bike a:hover::before, .navigation-menu-kontakt a:hover::before, .navigation-menu-bike a:hover::before, .navigation-menu-regulamin a:hover::before
 {
 	position: absolute;
-	content: '';
+	content: ' ';
 	background-color: rgb(28, 28, 31);
 	height: 100%;
 	width: 4px;
@@ -207,7 +207,7 @@ a[href^=tel] {
 .navigation-menu-main a:hover::after, .navigation-menu-e-bike a:hover::after, .navigation-menu-kontakt a:hover::after, .navigation-menu-bike a:hover::after, .navigation-menu-regulamin a:hover::after
 {
 	position: absolute;
-	content: '';
+	content: ' ';
 	background-color: black;
 	height: 100%;
 	width: 4px;
@@ -393,7 +393,7 @@ h3
 {
 	0%
 	{
-		transform: translateX(6vw);
+		transform: translateX(4vw);
 		opacity: 0;
 	}
 	100%
@@ -413,7 +413,7 @@ h3
 	}
 	100%
 	{
-		transform: translateX(6vw);
+		transform: translateX(4vw);
 		opacity: 0;
 		background-color: black;
 	}
@@ -422,7 +422,7 @@ h3
 {
 	0%
 	{
-		transform: translateX(-6vw);
+		transform: translateX(-4vw);
 		opacity: 0;
 	}
 	100%
@@ -442,7 +442,7 @@ h3
 	}
 	100%
 	{
-		transform: translateX(-6vw);
+		transform: translateX(-4vw);
 		opacity: 0;
 		background-color: black;
 	}
